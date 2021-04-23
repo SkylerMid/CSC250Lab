@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Text in the first box and a number in the second." />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Box 1" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/numBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Box 2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onNextScreenButtonClicked"
+        android:text="Submit" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
